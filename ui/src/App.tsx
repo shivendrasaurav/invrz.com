@@ -6,6 +6,7 @@ import './App.css';
 
 import Home from "./routes/home/index.tsx";
 import PrivacyPolicy from "./routes/privacy-policy/index.tsx";
+import DataPolicy from "./routes/data-policy/index.tsx";
 
 const App = () => {
   return(
@@ -14,6 +15,7 @@ const App = () => {
         <Routes>
           <Route path="/" element={<Home/>} />
           <Route path="/privacy-policy/:appname" element={<PrivacyPolicy/>} />
+          <Route path="/data-policy/:appname" element={<DataPolicy/>} />
         </Routes>
       </Router>
     </Fragment>

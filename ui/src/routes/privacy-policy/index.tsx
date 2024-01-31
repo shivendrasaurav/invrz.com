@@ -12,7 +12,7 @@ const PrivacyPolicy = () => {
                 <div className="policyCard">
                     <p className="policyTitle">Privacy Policy for {appname}</p>
                     <p className="policyText">
-                        This Privacy Policy outlines how Celestial Tracker ("we," "us," or "our") handles user information when you use our mobile application ("the App"). By downloading and using the App, you agree to the terms outlined in this policy.
+                        This Privacy Policy outlines how LunaSyz ("we," "us," or "our") handles user information when you use our mobile application ("the App"). By downloading and using the App, you agree to the terms outlined in this policy.
                         <br/><br/>
                         1. Location Data:
                         <br/>
@@ -24,7 +24,7 @@ const PrivacyPolicy = () => {
                         <br/><br/>
                         3. User Data Collection:
                         <br/>
-                        Celestial Tracker does not collect or store any personal information or user data. We respect your privacy, and our commitment is to provide a secure and enjoyable experience without compromising your personal information.
+                        LunaSyz does not collect or store any personal information or user data. We respect your privacy, and our commitment is to provide a secure and enjoyable experience without compromising your personal information.
                         <br/><br/>
                         4. Third-Party Services:
                         <br/>
