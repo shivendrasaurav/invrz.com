@@ -3,17 +3,25 @@ import "./home.styles.css";
 import lunasyzImg from "../../assets/lunasyz.png";
 import ctnImg from "../../assets/ctn.png";
 import fdwebImg from "../../assets/fdweb.png";
+import { NavLink } from "react-router-dom";
 
 const Home = () => {
+
+    const scrollToDiv = (id:string) => {
+        const element = document.getElementById(id);
+        if (element) {
+            element.scrollIntoView();
+        }
+    }
 
     return(
         <Fragment>
             <span id="top"></span>
             <div className="heroWrapper" id="hero">
                 <div className="navigationWrapper">
-                    <a href="#hero" className="navLink">hero</a>
-                    <a href="#about" className="navLink">about</a>
-                    <a href="#projects" className="navLink">projects</a>
+                    <a onClick={() => scrollToDiv("hero")} className="navLink">hero</a>
+                    <a onClick={() => scrollToDiv("about")} className="navLink">about</a>
+                    <a onClick={() => scrollToDiv("projects")} className="navLink">projects</a>
                 </div>
                 <div className="logoWrapper">
                     <p className="title">invrz.com</p>
@@ -53,15 +61,15 @@ const Home = () => {
                 </div>
             </div>
             <div className="socialsWrapper">
-                    <a className="navLink" href="https://github.com/invrz" target="_blank">
+                    <NavLink className="navLink" to="https://github.com/invrz" target="_blank">
                         Star On GitHub
-                    </a>
-                    <a className="navLink" href="#top">
+                    </NavLink>
+                    <a className="navLink" onClick={() => {scrollToDiv('top')}}>
                         Back To Top
                     </a>
-                    <a className="navLink" href="https://www.instagram.com/clutchtimenetwork/" target="_blank">
+                    <NavLink className="navLink" to="https://www.instagram.com/clutchtimenetwork/" target="_blank">
                         Follow CTN
-                    </a>
+                    </NavLink>
             </div>
         </Fragment>
     );

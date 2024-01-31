@@ -1,5 +1,5 @@
 import {Fragment} from "react";
-import {BrowserRouter as Router, Route, Routes} from 'react-router-dom';
+import {HashRouter as Router, Route, Routes} from 'react-router-dom';
 import 'fdweb/fluent-core.css';
 import 'fdweb/fluent-icons.css';
 import './App.css';
