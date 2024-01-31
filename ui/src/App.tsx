@@ -14,8 +14,8 @@ const App = () => {
       <Router>
         <Routes>
           <Route path="/" element={<Home/>} />
-          <Route path="/privacy-policy/:appname" element={<PrivacyPolicy/>} />
-          <Route path="/data-policy/:appname" element={<DataPolicy/>} />
+          <Route path="/privacy-policy/lunasyz" element={<PrivacyPolicy/>} />
+          <Route path="/data-policy/lunasyz" element={<DataPolicy/>} />
         </Routes>
       </Router>
     </Fragment>
