@@ -1,0 +1,22 @@
+.policyWrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .policyCard{
+        width: 720px;
+        max-width: 80%;        
+        background: #fafada;
+        padding: 2rem 1rem;
+        border-radius: 8px;
+        border: 2px solid transparent;
+        margin: 6rem 0;
+
+        .policyTitle{
+            font-size: 2.4rem;
+        }
+        .policyText{
+            font-size: 1.2rem;
+        }
+    }
+}
