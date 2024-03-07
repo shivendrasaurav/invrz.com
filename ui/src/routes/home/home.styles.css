@@ -1,6 +1,38 @@
+.sideNavWrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  width: 3.5vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  right: 0;
+  background-color: #1e1e3e;
+}
+.sideNavWrapper .navLink {
+  text-align: center;
+  display: block;
+  font-size: 12px;
+  width: 2.5vw;
+  height: 2.5vw;
+  cursor: pointer;
+  border-radius: 2.5vw;
+  color: transparent;
+}
+.sideNavWrapper .navLink.hero {
+  background-color: #b9fff1;
+}
+.sideNavWrapper .navLink.about {
+  background-color: #fafada;
+}
+.sideNavWrapper .navLink.projects {
+  background-color: #ffdab9;
+}
+
 .heroWrapper {
   background: #0e0e1e;
-  height: 70vh;
+  height: 90vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -11,8 +43,8 @@
   background: initial;
 }
 .heroWrapper .logoWrapper .title {
-  font-size: 4rem;
-  font-family: "Poppins";
+  font-family: "Unica One", sans-serif;
+  font-size: 20vw;
   padding: 12px 24px;
   width: 100%;
   text-align: center;
@@ -23,7 +55,6 @@
 }
 .heroWrapper .logoWrapper .tag {
   font-size: 1.6rem;
-  font-family: "Poppins";
   background: initial;
   padding: 12px 24px;
   color: #0e0e1e;
@@ -32,8 +63,23 @@
   text-align: center;
   margin-top: -10px;
 }
+.heroWrapper .textWrapper {
+  margin: 0 auto;
+  width: 720px;
+  max-width: 80%;
+  border-radius: 8px;
+  padding: 6px 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.heroWrapper .textWrapper span {
+  font-family: "Archivo", sans-serif;
+  font-size: 1.2rem;
+  color: #ffdab9;
+}
 .heroWrapper .navigationWrapper {
-  position: fixed;
+  position: sticky;
   top: 16px;
   background-color: #0e0e1e;
   width: 720px;
@@ -41,13 +87,13 @@
   border-radius: 8px;
   padding: 6px 24px;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
   align-items: center;
 }
 .heroWrapper .navigationWrapper .navLink {
   color: #ffdab9;
-  font-family: "Poppins";
-  font-size: 1rem;
+  font-size: 1.2rem;
+  font-family: "Archivo", sans-serif;
 }
 .heroWrapper .navigationWrapper .navLink:hover {
   color: #b9fff1;
@@ -58,7 +104,7 @@
 }
 .heroWrapper:hover {
   background-position: 100%, 100%;
-  height: 80vh;
+  height: 75vh;
 }
 .heroWrapper:hover .logoWrapper {
   background: initial;
@@ -93,7 +139,6 @@
 }
 .aboutWrapper .aboutCard .aboutTitle {
   font-size: 2.4rem;
-  font-family: "Poppins";
 }
 .aboutWrapper .aboutCard .aboutText {
   font-size: 1.4rem;
@@ -118,7 +163,6 @@
 }
 .projectsWrapper .projectsCard .projectsTitle {
   font-size: 2.4rem;
-  font-family: "Poppins";
 }
 .projectsWrapper .projectsCard .projectsBento {
   display: grid;

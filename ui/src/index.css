@@ -9,6 +9,7 @@
 
 ::-webkit-scrollbar{
   background-color: #acacac44;
+  display: none;
 }
 
 ::-webkit-scrollbar-thumb{

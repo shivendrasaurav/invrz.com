@@ -7,6 +7,8 @@ import { NavLink } from "react-router-dom";
 
 const Home = () => {
 
+    const dateToday = new Date().toDateString();
+
     const scrollToDiv = (id:string) => {
         const element = document.getElementById(id);
         if (element) {
@@ -17,15 +19,18 @@ const Home = () => {
     return(
         <Fragment>
             <span id="top"></span>
+            <div className="sideNavWrapper">            
+                <a onClick={() => scrollToDiv("hero")} className="navLink hero">H</a>
+                <a onClick={() => scrollToDiv("about")} className="navLink about">A</a>
+                <a onClick={() => scrollToDiv("projects")} className="navLink projects">P</a>
+            </div>
             <div className="heroWrapper" id="hero">
-                <div className="navigationWrapper">
-                    <a onClick={() => scrollToDiv("hero")} className="navLink">hero</a>
-                    <a onClick={() => scrollToDiv("about")} className="navLink">about</a>
-                    <a onClick={() => scrollToDiv("projects")} className="navLink">projects</a>
-                </div>
                 <div className="logoWrapper">
-                    <p className="title">invrz.com</p>
-                    <p className="tag">flip reality</p>
+                    <p className="title">INVRZ</p>
+                </div>
+                <div className="textWrapper">
+                    <span>Innovation Revolutionzed</span>
+                    <span>{dateToday}</span>
                 </div>
             </div>
             <div className="aboutWrapper" id="about">
@@ -77,3 +82,12 @@ const Home = () => {
 };
 
 export default Home;
+
+/*
+                <div className="navigationWrapper">
+                    <a onClick={() => scrollToDiv("hero")} className="navLink">Hero</a>
+                    <a onClick={() => scrollToDiv("about")} className="navLink">About</a>
+                    <a onClick={() => scrollToDiv("projects")} className="navLink">Projects</a>
+                </div>
+
+*/
