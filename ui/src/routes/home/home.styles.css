@@ -7,7 +7,7 @@
   height: 100vh;
   position: fixed;
   top: 0;
-  right: 0;
+  left: 0;
   background-color: #1e1e3e;
 }
 .sideNavWrapper .navLink {
@@ -30,6 +30,16 @@
   background-color: #ffdab9;
 }
 
+@media only screen and (max-width: 720px) {
+  .sideNavWrapper {
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 100vw;
+    height: 3.5vh;
+    top: 96.5vh;
+  }
+}
 .heroWrapper {
   background: #0e0e1e;
   height: 90vh;
@@ -49,16 +59,12 @@
   width: 100%;
   text-align: center;
   font-weight: bold;
-  background: #0e0e1e;
-  color: #ffdab9;
   border: 2px solid transparent;
 }
 .heroWrapper .logoWrapper .tag {
   font-size: 1.6rem;
   background: initial;
   padding: 12px 24px;
-  color: #0e0e1e;
-  border: 2px solid #0e0e1e;
   width: 100%;
   text-align: center;
   margin-top: -10px;
@@ -66,7 +72,7 @@
 .heroWrapper .textWrapper {
   margin: 0 auto;
   width: 720px;
-  max-width: 80%;
+  max-width: 60vw;
   border-radius: 8px;
   padding: 6px 24px;
   display: flex;
@@ -75,8 +81,7 @@
 }
 .heroWrapper .textWrapper span {
   font-family: "Archivo", sans-serif;
-  font-size: 1.2rem;
-  color: #ffdab9;
+  font-size: 1.2vw;
 }
 .heroWrapper .navigationWrapper {
   position: sticky;
@@ -92,7 +97,7 @@
 }
 .heroWrapper .navigationWrapper .navLink {
   color: #ffdab9;
-  font-size: 1.2rem;
+  font-size: 1.2vw;
   font-family: "Archivo", sans-serif;
 }
 .heroWrapper .navigationWrapper .navLink:hover {
@@ -105,19 +110,6 @@
 .heroWrapper:hover {
   background-position: 100%, 100%;
   height: 75vh;
-}
-.heroWrapper:hover .logoWrapper {
-  background: initial;
-}
-.heroWrapper:hover .logoWrapper .title {
-  background: initial;
-  color: #b9fff1;
-  border: 2px solid #0e0e1e;
-}
-.heroWrapper:hover .logoWrapper .tag {
-  background: #0e0e1e;
-  color: #b9fff1;
-  border: 2px solid transparent;
 }
 
 .aboutWrapper {
