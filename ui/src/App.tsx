@@ -1,7 +1,6 @@
 import {Fragment} from "react";
 import {HashRouter as Router, Route, Routes} from 'react-router-dom';
-import 'fdweb/fluent-core.css';
-import 'fdweb/fluent-icons.css';
+import 'patterns-ui/styles/main.css'
 import './App.css';
 
 import Home from "./routes/home/index.tsx";

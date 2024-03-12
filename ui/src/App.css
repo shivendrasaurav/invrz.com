@@ -8,6 +8,23 @@ body{
   background-position: center;
   background-attachment: fixed;
 }
+.fontUnica{
+  font-family: 'Unica One';
+}
+.fontArchivo{
+  font-family: 'Archivo';
+}
+.fontPoppins{
+  font-family: 'Poppins';
+}
+.fontMontserrat{
+  font-family: 'Montserrat';
+}
+
+/*patterns modifier*/
+.gridRow{
+  flex-wrap: wrap;
+}
 
 /*
 
