@@ -57,7 +57,6 @@
   font-family: "Unica One", sans-serif;
   font-size: 20vw;
   padding: 12px 24px;
-  width: 100%;
   text-align: center;
   font-weight: bold;
   border: 2px solid transparent;
@@ -66,23 +65,21 @@
   font-size: 1.6rem;
   background: initial;
   padding: 12px 24px;
-  width: 100%;
   text-align: center;
   margin-top: -10px;
 }
 .heroWrapper .textWrapper {
   margin: 0 auto;
-  width: 720px;
-  max-width: 60vw;
   border-radius: 8px;
-  padding: 6px 24px;
+  padding: 4px 6px;
+  min-width: 60vw;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
   align-items: center;
 }
 .heroWrapper .textWrapper span {
   font-family: "Archivo", sans-serif;
-  font-size: 1.2vw;
+  font-size: 1.2rem;
 }
 .heroWrapper .navigationWrapper {
   position: sticky;
@@ -174,34 +171,43 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
+  transition: 200ms;
 }
 .servicesWrapper .card p {
   font-size: 1.2rem;
 }
-
-.socialsWrapper {
+.servicesWrapper .card .img {
+  content: "";
   display: block;
-  margin: 0 auto 4px auto;
-  background-color: #0e0e1e;
-  width: 720px;
-  max-width: 80%;
-  border-radius: 8px;
-  padding: 6px 24px;
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
+  margin: 1rem 0;
+  height: 32vh;
+  background-size: cover;
+  background-position: center;
+  background-blend-mode: luminosity;
 }
-.socialsWrapper .navLink {
-  color: #ffdab9;
-  font-family: "Poppins";
+
+.outroWrapper a {
+  background-color: #ffdab9;
   font-size: 1rem;
-}
-.socialsWrapper .navLink:hover {
-  color: #b9fff1;
+  padding: 1rem 2rem 1rem 1rem;
+  margin: 0 1rem 0 0;
+  text-align: left;
+  color: #0e0e1e;
+  text-decoration: none;
   font-weight: bold;
+  border-radius: 0.4rem;
+}
+.outroWrapper a:hover {
+  color: #3e3e5e;
 }
 
 @media only screen and (max-width: 720px) {
+  .textWrapper {
+    flex-direction: column;
+  }
+  .textWrapper span {
+    padding: 1rem 0;
+  }
   .projectsWrapper .projectsCard .projectsBento {
     display: grid;
     grid-template-columns: 1fr;
