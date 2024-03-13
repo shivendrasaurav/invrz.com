@@ -21,20 +21,28 @@
         border-radius: 2.5vw;
         color: transparent;
 
-        &.hero{background-color: #b9fff1;}
-        &.about{background-color: #fafada;}
-        &.projects{background-color: #ffdab9;}
+        &.hero{background-color: #c2b9ff;}
+        &.about{background-color: #dae1fa;}
+        &.services{background-color: #b9fff4;}
+        &.projects{background-color: #f2ffb9;}
+        &.outro{background-color: #ffc1b9;}
     }
 }
 
 @media only screen and (max-width: 720px) {
     .sideNavWrapper{
+        display: flex;
         flex-direction: row;
         justify-content: space-around;
         align-items: center;
         width: 100vw;
-        height: 3.5vh;
-        top: 96.5vh;
+        height: 4vh;
+        position: fixed;
+        z-index: 999;
+        top: auto;
+        bottom: 0;
+        left: 0;
+        background-color: #1e1e3e;
     }
 }
 
@@ -140,7 +148,6 @@
 .projectsWrapper{
     min-height: 70vh;
     padding: 6rem 0rem;
-    display: flex;
     transition: 200ms;
 
     .projectsList{
@@ -199,21 +206,57 @@
 }
 
 .outroWrapper{
-    
-    a{
-        background-color: #ffdab9;
-        font-size: 1rem;
-        padding: 1rem 2rem 1rem 1rem;
-        margin: 0 1rem 0 0;
-        text-align: left;
-        color: #0e0e1e;
-        text-decoration: none;
-        font-weight: bold;
-        border-radius: 0.4rem;
 
-        &:hover{
-            color: #3e3e5e;
+    .textGroup{
+
+        p{
+            font-size: 1.8rem;
         }
+    }
+
+    .buttonGroup{
+
+        display: flex;
+        flex-wrap: wrap;
+    
+        a{
+            background-color: #ffdab9;
+            font-size: 1rem;
+            padding: 1rem 2rem 1rem 1rem;
+            margin: 1rem 1rem 0 0;
+            text-align: left;
+            color: #0e0e1e;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 0.4rem;
+    
+            &:hover{
+                color: #3e3e5e;
+            }
+        }
+
+    }
+}
+
+.tooltipWrapper{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    display: flex;
+    flex-direction: column;
+    width: 320px;
+    height: auto;
+    padding: 2rem 1rem;
+    border-radius: 0.6rem;
+    display: none;
+
+    .tooltipHeader{
+        font-weight: bold;
+    }
+    .tooltipText{
+        font-weight: normal;
+        font-size: 1.2rem
     }
 }
 
@@ -225,26 +268,10 @@
             padding: 1rem 0;
         }
     }
-    .projectsWrapper{
-        .projectsCard{
-            .projectsBento{
-                display: grid;
-                grid-template-columns: 1fr;
-                row-gap: 16px;
-                column-gap: 16px;
-                .projectWrapper{
-                    aspect-ratio: 1;
-                    &:nth-child(3n){
-                        .projectImg{
-                            aspect-ratio: 1;
-                            object-fit: cover;
-                            object-position: 0%;
-                        }
-                        grid-column: span 1;
-                        aspect-ratio: 1;
-                    }
-                }
-            }
+    .servicesWrapper{
+
+        .card{
+            margin-top: 1rem
         }
     }
 }
